@@ -1,8 +1,8 @@
 # Disclosure
 
 AI-generated results with a human managing the workflow. Produced by Claude
-Code (Fable 5, Anthropic); external review by GPT 5.6 (OpenAI); two outside
-Grok (xAI) reports adjudicated.
+Code (Fable 5, Anthropic); external reviews by GPT 5.6 (OpenAI) and by
+Grok (xAI), intaken and adjudicated.
 
 ## What the AI stations did
 
@@ -12,14 +12,14 @@ the searches that produced the quadruples at orders 101, 113, 163, 181 and 131;
 the re-derivation of the literature route to order 131 rather than its
 quotation; the Cooper–Wallis assembly of the thirteen Hadamard orders; the
 verifier and every certificate; the prior-art audit that fixes the claim
-wordings in the README and the note. An outside station reviewed the claims and
-the hedging. Two further outside reports were relayed in and adjudicated here
+wordings in the README and the note. Outside stations reviewed the claims and
+the hedging; their reports were relayed in and adjudicated here
 against primary sources; where a report and a source disagreed, the source
 governed.
 
 ## What the human owner did
 
-Granted the sessions, paid for the compute, obtained two papers this laboratory
+Granted the sessions, paid for the compute, obtained papers this laboratory
 could not otherwise read, relayed material to and from the outside reviewers,
 and ruled on publication, licensing, and scope. No mathematical contribution,
 and none is claimed. The owner's name appears here and in the copyright line;

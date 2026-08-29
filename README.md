@@ -1,8 +1,7 @@
 # Hadamard-T
 
-T-matrix witnesses, and the Hadamard orders they close. This repository is the
-T-matrix layer of a small AI-piloted mathematics laboratory. It holds the
-publicly posted Hadamard matrix of order 2060, re-verified and decoded here into
+T-matrix witnesses, and the Hadamard orders they close. This repository holds
+the publicly posted Hadamard matrix of order 2060, re-verified and decoded here into
 a periodic T-matrix quadruple of order 103; five further T-matrix quadruples, at
 orders 101, 113, 163, 181, and 131 (the last obtained twice, by two independent
 routes); and thirteen Hadamard orders built from those quadruples by the
@@ -104,8 +103,8 @@ file and are never committed.
 
 ## Credits, license, provenance
 
-The order-2060 payload is Schneider's, posted publicly on 2026-08-23; the
-decode is ours. The Turyn-type sequences behind one of the two order-131 routes
+The order-2060 payload is Schneider's, posted publicly on 2026-08-23; it was
+verified and decoded here. The Turyn-type sequences behind one of the two order-131 routes
 are London and Kotsireas 2025; prior T-sequences at these lengths are due to
 Đoković and to London. The machinery is classical: Williamson; Baumert and
 Hall; Goethals and Seidel; Turyn; Cooper and Wallis. The audited status table
