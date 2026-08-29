@@ -1,0 +1,17 @@
+{
+ "what": "a brute-forced T-matrix quadruple of order 3 (periodic identity sum_i PAF(T_i) = 3*delta_0), the positive control for the T(t) -> H(20t) template",
+ "n": 3,
+ "encoding": "T_i[q] = signs[q] if classes[q] == i else 0",
+ "classes": [
+  0,
+  1,
+  2
+ ],
+ "signs": [
+  1,
+  -1,
+  1
+ ],
+ "total_quadruples_of_length_3": 192,
+ "h60_canonical_sha256": "70f979f207bbd1d05fe2e28f7730206d797f44b972ac649466b21e39f53a1b13"
+}

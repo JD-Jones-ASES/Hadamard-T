@@ -1,0 +1,23 @@
+{
+ "encoding": "rows[i] is a string of w chars, '+'=+1 '-'=-1, indexed by k in Z_w; the circulant is C[i][j] = row[(j-i) mod w]",
+ "what": "symmetric circulant Williamson quadruple of order 13: four +-1 first rows with a[k]=a[-k] and sum_q PAF_q(s) = 4w*delta_0",
+ "provenance": "brute-forced by this laboratory (2026-08-29) over all 2^7 symmetric circulant +-1 rows; classical replay-grade object (Williamson type is known for every odd w <= 63 except 35, 47, 53, 59). Not in the trust chain: re-verified exactly by the certificate that uses it.",
+ "quadruples": {
+  "13": {
+   "w": 13,
+   "role": "target",
+   "row_sums": [
+    -7,
+    1,
+    -1,
+    1
+   ],
+   "rows": [
+    "++----------+",
+    "++-++----++-+",
+    "--++-+--+-++-",
+    "+-+-++--++-+-"
+   ]
+  }
+ }
+}

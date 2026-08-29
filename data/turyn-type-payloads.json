@@ -1,0 +1,23 @@
+{
+ "what": "Hexadecimal payloads reported to encode the Turyn-type sequences TT(40), TT(42), TT(44) of London & Kotsireas, 'New Turyn-type sequences', Cryptography and Communications 17(5):1601-1610 (2025), DOI 10.1007/s12095-025-00829-z, published 2025-08-11.",
+ "provenance": {
+  "label": "VERIFIED-PRIMARY: the three payloads are byte-identical to the data printed in London and Kotsireas 2025, read firsthand from the publisher PDF on 2026-08-29. The paper prints each payload twice, in section 3 and in Appendix A, and the two copies agree.",
+  "corroboration": "The payloads are not trusted on provenance. All three are decoded and checked by the certificate against the exact Turyn-type identity with its own integer loop, and all three verify with residual exactly 0.",
+  "retrieved": "2026-08-29"
+ },
+ "encoding": {
+  "note": "This is the paper's own printed Appendix-A convention, and it was also determined independently here from the payloads alone. Column-major: hex digit j carries column j of the 4-row array, bits MSB..LSB = (A, B, C, D), with '+' -> 0 and '-' -> 1. D has length n-1, so the FINAL hex digit carries only (A, B, C) and is RIGHT-aligned (its high bit is the pad). Reading the final digit left-aligned instead gives a quadruple that misses the Turyn identity by exactly the two signs A[n-1], C[n-1].",
+  "how_it_was_found": "The left-aligned reading gives residual cost sum_i R_i^2 = 588 at n = 44, against a null minimum of 2512 over 4074 random 44-digit hex strings scored the same way (min over all 48 role/drop conventions). Two single-sign flips, both in the last column, drive it to 0."
+ },
+ "payloads": {
+  "40": "0603E974475D3A384C3AC8B309C44C2CDCE9A726",
+  "42": "0080BC3834184327FD11BE854738B30B392A9D4E56",
+  "44": "00F32EFBCAB9D5C5C0F1F90698982729CD07C8AA4966"
+ },
+ "decoded_TT44": {
+  "A": "++-++--------+-+-+-+--++----+++---++----+-+-",
+  "B": "++-++--+-+++-----+-+-++-+++++-++--+--+++-+--",
+  "C": "++------+--+++++++-+-++-++++---++++-++--++-+",
+  "D": "++--++--++----+-++----++-+-++-+-+-+-+++++-+"
+ }
+}

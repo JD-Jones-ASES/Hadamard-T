@@ -1,0 +1,39 @@
+{
+ "encoding": "rows[i] is a string of w chars, '+'=+1 '-'=-1, indexed by k in Z_w; circulant C[i][j] = row[(j-i) mod w]",
+ "provenance": "brute-forced by this laboratory (2026-08-29); classical replay-grade objects -- Williamson matrices are known for every odd w <= 63 except 35, 47, 53, 59. Banked so the certificates are self-contained; re-verified exactly by run.py. Not in the trust chain.",
+ "quadruples": {
+  "13": {
+   "role": "target",
+   "row_sums": [
+    5,
+    -3,
+    -3,
+    -3
+   ],
+   "rows": [
+    "++++-+--+-+++",
+    "++---+--+---+",
+    "++---+--+---+",
+    "+---+-++-+---"
+   ],
+   "w": 13
+  },
+  "9": {
+   "role": "target",
+   "row_sums": [
+    5,
+    1,
+    1,
+    -3
+   ],
+   "rows": [
+    "++++--+++",
+    "++-+--+-+",
+    "++-+--+-+",
+    "+---++---"
+   ],
+   "w": 9
+  }
+ },
+ "what": "symmetric circulant Williamson quadruples of orders 9 and 13"
+}
