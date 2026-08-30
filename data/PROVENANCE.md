@@ -148,3 +148,11 @@ byte-identical to the source payload and pinned by the digests above; the
 matrix is mathematical data and no license is claimed over it here. The
 Table 4 transcription is a transcription of a published table, credited to
 its authors. License boundaries for this repository are in LICENSE-DOCS.md.
+
+## Release re-check (2026-08-30)
+
+At the public flip, the dated-table source was re-checked: arXiv:2411.18897
+remains at v2 (2025-08-30), the version every reading in this repository
+cites. The table-relative claims stand as written; the table records what its
+authors knew on its date, and later closures elsewhere would not be visible
+from here.
