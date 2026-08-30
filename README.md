@@ -36,7 +36,7 @@ arXiv LaTeX e-print, machine-diffed 195/195 on 2026-08-29 and re-checked at
 release date. Eight of the thirteen — 2884, 4532, 7004, 7172, 7828, 8476, 9476
 and 11948, the products of the order-103 and order-163 quadruples — carry a
 further result: the firsthand prior-art audit closed 2026-08-29 located no
-published route to any of the eight.
+published route to the order-103 or order-163 T-objects they are built from.
 
 On the six orders built from the order-103 quadruple:
 
@@ -44,7 +44,8 @@ On the six orders built from the order-103 quadruple:
 > constructed and machine-verified here. The Cati–Pasechnik database
 > (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order 2²·n for
 > the corresponding n; on that basis these are the first publicly accessible and
-> independently reproducible constructions of these orders located in our audit.
+> independently reproducible constructions of these orders located in our
+> audit. A database records what its authors knew, not what exists.
 
 On the two built from the order-163 quadruple: `H(7172)` and `H(8476)` land on
 the entries `1793(4)` and `2119(4)`, and `m = 4` there records that neither

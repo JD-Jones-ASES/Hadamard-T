@@ -46,7 +46,8 @@ applies here unchanged.
 > (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order 2²·n
 > for the corresponding n; on that basis these are the first publicly
 > accessible and independently reproducible constructions of these orders
-> located in our audit.
+> located in our audit. A database records what its authors knew, not what
+> exists.
 
 The Table 4 entries the six orders land on are `721(3)`, `1133(3)`,
 `1751(3)`, `1957(3)`, `2369(3)`, `2987(3)`, quoted from the machine-diffed

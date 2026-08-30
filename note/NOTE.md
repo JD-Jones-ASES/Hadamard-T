@@ -38,7 +38,8 @@ here.** Each lands on an entry listed unresolved in Cati–Pasechnik Table 4 v2
 LaTeX e-print and machine-diffed 195/195; re-checked at the release date.
 Eight of the thirteen — 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948, the
 products of `T(103)` and `T(163)` — carry a further result: the prior-art audit
-closed 2026-08-29 located no published route to any of the eight. The five
+closed 2026-08-29 located no published route to the `T(103)` or `T(163)`
+objects they are built from. The five
 orders at 131 are separated from those eight for the opposite reason: there a
 published route does close them (section 6.3).
 
@@ -320,7 +321,8 @@ status line in a survey can be used for.
    publicly accessible and recoverable order-103 T-matrix would, through that
    classical product, have supplied a construction of H(2060) at once; the
    longstanding gap is therefore strong corroborating evidence for the audit's
-   conclusion. The earliest publicly accessible instance the audit located is
+   conclusion, not a proof of absence — a published object can be overlooked,
+   misclassified, or never propagated. The earliest publicly accessible instance the audit located is
    the one implicit in the gist, which is exactly where this object came from.
 
 **What this repository adds at order 103**, therefore: the products of
@@ -388,10 +390,12 @@ orders is **REPORTED-FROM-AUDITED-TABLE**. The claim, in the audit's wording:
 > (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order `2²·n`
 > for the corresponding `n`; on that basis these are the first publicly
 > accessible and independently reproducible constructions of these orders
-> located in our audit.
+> located in our audit. A database records what its authors knew, not what
+> exists.
 
 These six, together with `H(7172)` and `H(8476)` in section 6.1, are the eight
-orders of the thirteen where the audit found no closing publication. The
+orders of the thirteen built on T-objects to which the audit located no
+published route. The
 separation is deliberate and evidenced in both directions: at 103 and 163 the
 audit of 2026-08-29 located no published route to the underlying T-object, with
 the arithmetic reason recorded per route in section 4; at 131 it located one,
