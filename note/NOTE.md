@@ -340,13 +340,18 @@ applied first, "not the priority in time" — so absence of a T-mark there is
 weak evidence in either direction, which is exactly why every reading from
 such a table is labelled rather than trusted.
 
-What remains unread, named so the reader can weigh it: Zuo–Xia–Xia 2013
-itself — a composite-T-matrix method that reached the prime orders 73 and 79,
-so its reach at 103, 163 and 181 is unknown until read — and the book's §3.6
-and §5.10.1, whose survey content is bounded by the book's own appendix.
-Objects in this subfield have also appeared on public posting sites repeatedly
-during 2026. Any dated statement in this note is therefore re-checked at the
-release date and not at the date of discovery.
+Zuo–Xia–Xia 2013 (*Linear Algebra Appl.* 438, 1223–1228) has been read
+firsthand as well. Its composite theorem multiplies a strongly disjoint
+quadruple of order `t` by a suitable quadruple of order `n` into T-matrices of
+order `t·n` — products only, so no prime is reachable that way. Its
+prime-order objects are explicit one-off cyclotomic constructions at 73, 79
+and 113, and its base-sequence route gives order `2m + p`, which at 103 is the
+same `BS(52, 51)` wall recorded above. The orders 103, 163 and 181 do not
+occur in it. What remains unread: the book's §3.6 and §5.10.1, whose survey
+content is bounded by the book's own appendix. Objects in this subfield have
+also appeared on public posting sites repeatedly during 2026. Any dated
+statement in this note is therefore re-checked at the release date and not at
+the date of discovery.
 
 ---
 
@@ -420,7 +425,11 @@ Label: **PROVEN-BY-CERTIFICATE**, in `certs/03-t163-products/run.py`.
 
 The object came from a bounded, pre-registered search over exactly that tier:
 `{0}` plus 18 orbits of size 9, 57 free cells, with the row-sum profile pinned
-to `(1, 0, 9, 9)` before any search code ran. The engine is a
+to `(1, 0, 9, 9)` before any search code ran. The tier ansatz itself —
+quadruples assembled from `±` unions of multiplicative-subgroup cosets in
+`Z_t` — is classical, not this note's invention: Zuo–Xia–Xia 2013 build their
+T-matrices of orders 73, 79 and 113 from exactly such coset systems, at
+multiplier orders 3, 3 and 7. The engine is a
 meet-in-the-middle match on exact periodic-autocorrelation vectors. **The tier
 was swept to exhaustion three ways** — two decompositions under a rotation
 quotient and one full unreduced enumeration of 4.26 × 10⁹ half-elements — and
@@ -438,9 +447,9 @@ Prior-art wording, at the ceiling and not beyond it:
 > T-matrix witness located in our audit (audit closed 2026-08-29)
 
 with the caveat of section 4 attached: `163 = 6·27 + 1` is in range of the
-`6m + 1` method family, whose primary paper — read firsthand — prints nothing
-above order 79 and proves no general existence; section 4 names the one shelf
-still unread there.
+`6m + 1` method family, whose papers — read firsthand — prove no general
+existence and print nothing above order 79 directly, or 113 by one-off
+cyclotomic search.
 
 **Corollary E.** *With Williamson quadruples of orders 11 and 13, the same
 composite gives explicit Hadamard matrices of orders 7172 and 8476.* Their
@@ -474,14 +483,18 @@ Prior art at 101 and 113, in the mandated wording, with 119 and 131 named in the
 same sentence because they are in the same position:
 
 > T-sequences of these lengths are in the published literature
-> (Best–Đoković–Kharaghani–Ramp 2013 for 113; the Turyn-type ladder for
-> 101/119; London–Kotsireas 2025 for 131). Our witnesses are independent
-> re-derivations, not new objects.
+> (Best–Đoković–Kharaghani–Ramp 2013 and Zuo–Xia–Xia 2013 for 113; the
+> Turyn-type ladder for 101/119; London–Kotsireas 2025 for 131). Our witnesses
+> are independent re-derivations, not new objects.
 
 There is no firstness claim at 101, 113, 119 or 131, ever. The audit strengthened
 this from primary sources: London's printed T-matrices at 101, 107, 113 and 119
 pass both the periodic and the non-periodic axioms exactly, and his own
 Turyn-type data generates the 113 and 119 entries character-for-character.
+Zuo–Xia–Xia 2013 print a further explicit T(113), a cyclotomic object at the
+order-7 multiplier tier with support multiset `(22, 21, 42, 28)` — a different
+object from the one banked here, and one more reason no firstness exists at
+113.
 
 At 181 the ceiling wording applies and nothing above it:
 
@@ -494,8 +507,8 @@ was not audited against the direct T-matrix literature, which is the literature
 that could contain a prior order-181 object. The Table 4 fingerprint that
 corroborates 103 is absent at 181: every `181·w` is recorded known by other
 routes, so the table can neither corroborate nor refute. And `181 = 6·30 + 1`
-is in range of the `6m + 1` method family — its primary paper, read firsthand,
-prints nothing above order 79; section 4 names what remains unread.
+is in range of the `6m + 1` method family — its papers, read firsthand, prove
+no general existence and print nothing above order 113.
 
 ### 6.3 Order 131 — twice, and the two are different objects
 
@@ -733,7 +746,11 @@ difference set that the chart labels `A103` is Đoković, *Five New Orders for
 Hadamard Matrices of Skew Type*, Australasian Journal of Combinatorics 10 (1994)
 259–264; the frontier statements on T-sequences and base sequences are his
 arXiv:1008.2043 (2010), and the order-113 T-sequences are
-Best–Đoković–Kharaghani–Ramp, arXiv:1206.4107 (2012/13). The machinery is
+Best–Đoković–Kharaghani–Ramp, arXiv:1206.4107 (2012/13). The
+multiplier-tier ansatz behind the searches of section 6 follows the coset
+constructions of Zuo, Xia and Xia, *Constructions of composite T-matrices*,
+Linear Algebra and its Applications 438 (2013) 1223–1228, and the
+Xia–Xia–Seberry line surveyed in section 4. The machinery is
 classical: Turyn for the Turyn-type ladder, Cooper and Wallis (1972) for the
 composite, Goethals and Seidel for the array, Williamson for the quadruples, and
 Baumert and Hall for the array family the assembly template belongs to. Every

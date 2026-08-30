@@ -43,9 +43,9 @@ At orders 163 and 181, the ceiling wording is:
 At orders 101, 113, and 131 we claim no firstness of any kind:
 
 > T-sequences of these lengths are in the published literature
-> (Best–Đoković–Kharaghani–Ramp 2013 for 113; the Turyn-type ladder for
-> 101/119; London–Kotsireas 2025 for 131). Our witnesses are independent
-> re-derivations, not new objects.
+> (Best–Đoković–Kharaghani–Ramp 2013 and Zuo–Xia–Xia 2013 for 113; the
+> Turyn-type ladder for 101/119; London–Kotsireas 2025 for 131). Our witnesses
+> are independent re-derivations, not new objects.
 
 On the six orders built from the order-103 quadruple:
 
