@@ -275,7 +275,9 @@ The audit that supports that sentence read the following firsthand on
 renders); Đoković's 1994 paper in *Australasian Journal of Combinatorics* 10,
 259–264; Đoković, arXiv:1008.2043 (2010); Best–Đoković–Kharaghani–Ramp,
 arXiv:1206.4107; Cati, arXiv:2306.16812; Cati–Pasechnik, arXiv:2411.18897v2;
-London–Kotsireas 2025 (publisher PDF). Four facts came out of it and are
+London–Kotsireas 2025 (publisher PDF); Xia–Xia–Seberry–Qin (the `6m + 1`
+manuscript); Xia–Xia–Seberry–Zuo, *Australas. J. Combin.* 32 (2005);
+Seberry–Yamada 2020, Appendix A; Miyamoto 1991 (scan). Four facts came out of it and are
 recorded because they bound the claim rather than support it.
 
 1. The one order-103 object in the public record adjacent to this one is the
@@ -317,19 +319,34 @@ Colbourn–Dinitz *Handbook of Combinatorial Designs*, 2nd ed. (2007) was not re
 firsthand; a relayed digest of its Part V remark was tested arithmetically
 against a pre-2007 fact set and found consistent with this note (22 of 27 listed
 exceptions non-derivable, 5 over-listed, no false negatives), but it is context
-only and is never quoted. The `6m + 1` construction literature —
-Xia–Xia–Seberry–Qin, *Construction of T-matrices of order 6m + 1*, and
-Seberry–Yamada 2020 §3.6 — has not been read firsthand here. An outside review
-of this note reports that the former constructs T-matrices for prime powers
-`6m + 1` with concrete sequences only for `m ≤ 13`, `m ≠ 9` — up to order 79 —
-so it would supply a published *method* plausibly applying at
-`103 = 6·17 + 1` and no published *witness*; that report is
-REPORTED-FROM-SECONDARY-SOURCE until the paper is read, and it will be read
-before any firstness wording here is frozen. The same family bears on
-`163 = 6·27 + 1` and `181 = 6·30 + 1` (sections 6.1, 6.2). Objects in this
-subfield have also appeared on public posting sites repeatedly during 2026.
-Any dated statement in this note is therefore re-checked at the release date
-and not at the date of discovery.
+only and is never quoted.
+
+The `6m + 1` construction literature has been read firsthand at its primary
+source. Xia–Xia–Seberry–Qin, *Construction of T-matrices of order 6m + 1*
+(author manuscript; no venue printed), works in exactly this note's periodic
+circulant setting, prints concrete constructions only for `m ≤ 13`, `m ≠ 9` —
+largest order 79 — and states general existence at prime powers `6m + 1` as an
+explicit, unproved conjecture. The orders 103, 163 and 181 do not occur in it,
+and its silence above `m = 13` is silence, not a negative search result: it
+claims no search range and no exhaustiveness. Its own page-11 note credits the
+orders 73 and 79 as first found in 2013 (Zuo–Xia–Xia, *Linear Algebra Appl.*
+438, 1223–1228) — the explicit T-matrix frontier in the seventies was still
+moving in 2013. A related 2005 paper (Xia–Xia–Seberry–Zuo, *Australas. J.
+Combin.* 32) constructs T-matrices only at square orders `q²`, which cannot
+reach a prime. Seberry–Yamada 2020's Appendix A was read firsthand as well: in
+the 79–200 window its tables imply a T-matrix at order 119 alone, carry no
+T-implication at 103, 163 or 181, and state that they record the construction
+applied first, "not the priority in time" — so absence of a T-mark there is
+weak evidence in either direction, which is exactly why every reading from
+such a table is labelled rather than trusted.
+
+What remains unread, named so the reader can weigh it: Zuo–Xia–Xia 2013
+itself — a composite-T-matrix method that reached the prime orders 73 and 79,
+so its reach at 103, 163 and 181 is unknown until read — and the book's §3.6
+and §5.10.1, whose survey content is bounded by the book's own appendix.
+Objects in this subfield have also appeared on public posting sites repeatedly
+during 2026. Any dated statement in this note is therefore re-checked at the
+release date and not at the date of discovery.
 
 ---
 
@@ -420,9 +437,10 @@ Prior-art wording, at the ceiling and not beyond it:
 > the first publicly accessible and independently reproducible order-163
 > T-matrix witness located in our audit (audit closed 2026-08-29)
 
-with the caveat of section 4 attached: `163 = 6·27 + 1`, and the `6m + 1`
-construction literature is unread here. It will be read before this wording is
-frozen for release.
+with the caveat of section 4 attached: `163 = 6·27 + 1` is in range of the
+`6m + 1` method family, whose primary paper — read firsthand — prints nothing
+above order 79 and proves no general existence; section 4 names the one shelf
+still unread there.
 
 **Corollary E.** *With Williamson quadruples of orders 11 and 13, the same
 composite gives explicit Hadamard matrices of orders 7172 and 8476.* Their
@@ -475,8 +493,9 @@ map of reachable lengths is a lower bound on knowledge, not a published table. I
 was not audited against the direct T-matrix literature, which is the literature
 that could contain a prior order-181 object. The Table 4 fingerprint that
 corroborates 103 is absent at 181: every `181·w` is recorded known by other
-routes, so the table can neither corroborate nor refute. And `181 = 6·30 + 1`,
-so the unread `6m + 1` construction literature of section 4 bears here too.
+routes, so the table can neither corroborate nor refute. And `181 = 6·30 + 1`
+is in range of the `6m + 1` method family — its primary paper, read firsthand,
+prints nothing above order 79; section 4 names what remains unread.
 
 ### 6.3 Order 131 — twice, and the two are different objects
 
