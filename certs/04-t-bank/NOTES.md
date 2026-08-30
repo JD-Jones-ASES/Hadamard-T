@@ -35,9 +35,11 @@ printed **UNVERIFIABLE**: not open, not closed. The sweep is run over every odd
 `w ≤ 63`, not only the ten `w` this repository banks, so the empty result is
 not an artefact of the Williamson bank.
 
-**Two controls bind that parse.** A transcription that could not reproduce the
-closures this repository already spends would not be trustworthy for a negative
-result, so the same file is re-read at the two `t` where orders actually close:
+**Two controls make that parse an independent re-derivation.** The same file is
+re-read at the two `t` where orders actually close, so the openness reading that
+certs 02 and 03 spend is recomputed here from the shipped table at run time
+rather than carried across as an assertion — and a transcription that could not
+reproduce those closures would not be trustworthy for a negative result either:
 
 | control | unresolved `w` found | expected |
 | --- | --- | --- |
@@ -68,7 +70,7 @@ These are gates, not results: all six orders were already known.
 | the six gate matrices exist | PROVEN-BY-CERTIFICATE |
 | firstness at 101 or 113 | **never claimed** |
 | the standing of the order-181 object | hedged, dated — see below |
-| "these three buy nothing" | REPORTED-FROM-AUDITED-TABLE — re-derived here from `data/cp-table4-v2.json`, but a table records what its authors knew on its date |
+| "these three buy nothing" | REPORTED-FROM-AUDITED-TABLE — re-derived here from `data/cp-table4-v2.json` at run time, together with the unresolved sets at `t = 103` and `t = 163` |
 
 On 101 and 113:
 
@@ -121,4 +123,6 @@ This certificate binds the existence of the three quadruples and of the six
 gate matrices, and nothing more. It makes no closure claim: no order it
 touches was open. It says nothing about products other than Cooper–Wallis,
 nothing about orders with `n > 2999`, and nothing about other multiplier tiers
-at these three `t`.
+at these three `t`. What it does establish beyond the three objects is the
+table reading itself: the same run-time parse re-derives the unresolved sets at
+`t = 103` and `t = 163` that certs 02 and 03 build on.

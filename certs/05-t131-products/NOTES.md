@@ -72,7 +72,11 @@ the pinned digests depend on that choice.
 | the five orders are listed at `m = 3` in Cati–Pasechnik Table 4 v2 | REPORTED-FROM-AUDITED-TABLE (machine-diffed transcription of the 2025-08-30 e-print; re-check at release date) |
 | "no one had these matrices before" | **not claimed** |
 
-**No novelty of existence is claimed at 131.**
+**No novelty of existence is claimed at 131.** These five orders are
+deliberately separated from the eight orders of certs 02 and 03, and the
+separation is the audit's own finding: at 131 the audit of 2026-08-29 located a
+published route that closes them, and at 103 and 163 the same audit located no
+such route.
 
 > T-sequences of these lengths are in the published literature
 > (Best–Đoković–Kharaghani–Ramp 2013 for 113; the Turyn-type ladder for
@@ -128,5 +132,7 @@ makes `verify.py` exit 1.
 ## Scope
 
 This certificate binds the existence of the two order-131 quadruples and of
-the ten matrices, and nothing more. It does not claim the five orders were
-open, and it makes no firstness claim at 131.
+the ten matrices, and nothing more; it makes no firstness claim at 131. On
+status: Table 4 v2 lists the five entries unresolved; this certificate proves
+the ten matrices exist; we do not claim the table is a non-existence proof, and
+we do not need it to be.

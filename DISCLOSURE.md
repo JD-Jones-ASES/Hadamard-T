@@ -1,5 +1,12 @@
 # Disclosure
 
+The results are thirteen Hadamard orders — 2884, 3668, 4532, 5764, 6812, 7004,
+7172, 7828, 8476, 8908, 9476, 9956 and 11948 — constructed by the Cooper–Wallis
+product and machine-verified in exact integer arithmetic on entries listed
+unresolved in Cati–Pasechnik Table 4 v2 (arXiv:2411.18897v2, 2025-08-30),
+together with the six periodic T-matrix quadruples they are built from, at
+orders 101, 103, 113, 131, 163 and 181.
+
 AI-generated results with a human managing the workflow. Produced by Claude
 Code (Fable 5, Anthropic); external reviews by GPT 5.6 (OpenAI) and by
 Grok (xAI), intaken and adjudicated.
@@ -63,4 +70,5 @@ is invited; questions and verification reports are welcome via GitHub issues.
 - **Cati and Pasechnik**, *A database of constructions of Hadamard matrices*,
   arXiv:2411.18897v2 (2025-08-30) — the status table against which the thirteen
   orders are reported. A database records what its authors knew, not what
-  exists.
+  exists; the readings taken from it here are documentary, and every one is
+  re-derived from the transcription shipped in `data/` at certificate run time.

@@ -46,14 +46,14 @@ applies here unchanged.
 > (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order 2²·n
 > for the corresponding n; on that basis these are the first publicly
 > accessible and independently reproducible constructions of these orders
-> located in our audit. A database records what its authors knew, not what
-> exists.
+> located in our audit.
 
 The Table 4 entries the six orders land on are `721(3)`, `1133(3)`,
 `1751(3)`, `1957(3)`, `2369(3)`, `2987(3)`, quoted from the machine-diffed
-transcription of the v2 e-print (2025-08-30) and re-checked at release date.
-The Williamson quadruples are classical, replay-grade objects and carry no
-novelty claim.
+transcription of the v2 e-print (2025-08-30) and re-checked at release date;
+cert 04 re-derives the same unresolved set at `t = 103` from that transcription
+at run time. The Williamson quadruples are classical, replay-grade objects and
+carry no novelty claim.
 
 ## How to run
 
@@ -83,6 +83,8 @@ character of the green H(36) makes `verify.py` exit 1.
 
 ## Scope
 
-This certificate binds the existence of the six matrices and nothing more. It
-does not claim the six orders were open; it reports their status from an
-audited table, with the label above.
+This certificate binds the existence of the six matrices and nothing more; the
+status of the six orders is reported from an audited table, under the label
+above. Table 4 v2 lists the six entries unresolved; this certificate proves the
+six matrices exist; we do not claim the table is a non-existence proof, and we
+do not need it to be.

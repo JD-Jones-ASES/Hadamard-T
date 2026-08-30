@@ -22,10 +22,56 @@ as first rows are T-matrices in the sense of Cooper–Wallis.
 Williamson-type quadruple of order w yields a Hadamard matrix of order 4tw.
 
 **Periodic, not aperiodic.** The order-103 object is a periodic T-matrix
-quadruple: it satisfies the identity above and nothing stronger. An aperiodic
-T-sequence of length 103 is not constructed here and is not claimed.
+quadruple: an aperiodic T-sequence of length 103 is not constructed here and is
+not claimed. The periodic identity is exactly the Cooper–Wallis hypothesis, and
+it is what the products below need.
 
 ## Claims
+
+Thirteen Hadamard orders — 2884, 3668, 4532, 5764, 6812, 7004, 7172, 7828,
+8476, 8908, 9476, 9956 and 11948 — are constructed and machine-verified here,
+and every one of them lands on an entry listed unresolved in Cati–Pasechnik
+Table 4 v2 (arXiv:2411.18897v2, 2025-08-30), in a transcription taken from the
+arXiv LaTeX e-print, machine-diffed 195/195 on 2026-08-29 and re-checked at
+release date. Eight of the thirteen — 2884, 4532, 7004, 7172, 7828, 8476, 9476
+and 11948, the products of the order-103 and order-163 quadruples — carry a
+further result: the firsthand prior-art audit closed 2026-08-29 located no
+published route to any of the eight.
+
+On the six orders built from the order-103 quadruple:
+
+> Hadamard matrices of orders 2884, 4532, 7004, 7828, 9476 and 11948,
+> constructed and machine-verified here. The Cati–Pasechnik database
+> (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order 2²·n for
+> the corresponding n; on that basis these are the first publicly accessible and
+> independently reproducible constructions of these orders located in our audit.
+
+On the two built from the order-163 quadruple: `H(7172)` and `H(8476)` land on
+the entries `1793(4)` and `2119(4)`, and `m = 4` there records that neither
+`2²·n` nor `2³·n` was known, so the same two matrices also give `H(14344)` and
+`H(16952)` by Sylvester doubling under the same reading.
+
+The discrimination between the eight and the other five is itself a result of
+the audit, and it runs both ways. The five orders built from the order-131
+quadruple were separated out precisely because a **published route closes
+them**: London and Kotsireas 2025 supply `TT(44)`, and the classical chain
+`TT(44) → BS(87, 44) → TS(131)` reaches order 131, so no novelty of existence
+is claimed at any of the five. For the eight, the same audit — eleven primary
+sources read firsthand on 2026-08-29 — located no such route. The arithmetic
+reasons are recorded route by route in [`note/NOTE.md`](note/NOTE.md) §4 and
+§6.1: base sequences at 103 would need `BS(52, 51)`, past the verified frontier
+at `n ≤ 43`; the Turyn-type ladder gives lengths `3n − 1` and steps over 103;
+103 and 163 are prime, so the composite routes need a factorisation they do not
+have; and the `6m + 1` method family, in range at both orders, prints nothing
+above order 79 directly, or 113 by one-off cyclotomic search.
+
+Scope of the table reading. A database records what its authors knew, not what
+exists. The status claims above are documentary — the named, dated table lists
+these entries unresolved — and they are checkable twice over: `certs/04`
+re-derives that reading from the shipped transcription at run time, and the
+matrices themselves are proved by certificate independently of any table.
+
+### Priority postures
 
 On the order-103 object, we make no priority claim:
 
@@ -35,12 +81,6 @@ On the order-103 object, we make no priority claim:
 > order-103 T-matrix in the literature; we make no priority claim on the object
 > itself.
 
-At orders 163 and 181, the ceiling wording is:
-
-> the first publicly accessible and independently reproducible order-163
-> [resp. order-181] T-matrix witness located in our audit (audit closed
-> 2026-08-29)
-
 At orders 101, 113, and 131 we claim no firstness of any kind:
 
 > T-sequences of these lengths are in the published literature
@@ -48,21 +88,22 @@ At orders 101, 113, and 131 we claim no firstness of any kind:
 > Turyn-type ladder for 101/119; London–Kotsireas 2025 for 131). Our witnesses
 > are independent re-derivations, not new objects.
 
-On the six orders built from the order-103 quadruple:
+At orders 163 and 181, the ceiling wording is:
 
-> Hadamard matrices of orders 2884, 4532, 7004, 7828, 9476 and 11948,
-> constructed and machine-verified here. The Cati–Pasechnik database
-> (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order 2²·n for
-> the corresponding n; on that basis these are the first publicly accessible and
-> independently reproducible constructions of these orders located in our audit.
-> A database records what its authors knew, not what exists.
+> the first publicly accessible and independently reproducible order-163
+> [resp. order-181] T-matrix witness located in our audit (audit closed
+> 2026-08-29)
+
+Each posture is fixed by the audit of 2026-08-29 and is carried unchanged in
+the note, in the `data/` records, and in the certificate that replays the
+object.
 
 ## The orders
 
-All thirteen are listed unresolved in Cati–Pasechnik Table 4 v2 (2025-08-30),
-machine-diffed; re-checked at release date. An entry n(m) means m is minimal
-with a Hadamard matrix of order 2ᵐ·n known there. Matrix counts are a remark,
-not the scoreboard: the order-131 row is built twice, both builds in cert 05.
+An entry n(m) means m is minimal with a Hadamard matrix of order 2ᵐ·n known in
+Table 4 v2, so an entry with m ≥ 3 is an order 4n the table does not record.
+Matrix counts are a remark, not the scoreboard: the order-131 row is built
+twice, both builds in cert 05.
 
 | t | orders 4tw, with w in parentheses | Table 4 entries n(m) |
 | --- | --- | --- |
@@ -123,4 +164,5 @@ Hadamard matrix of order 7796. Formalization:
 [Hadamard-formal](https://github.com/JD-Jones-ASES/Hadamard-formal) — a Lean 4
 / Mathlib development proving the Cooper–Wallis construction and the existence
 theorems at orders 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948 from
-kernel-checked copies of this repository's banked witnesses.
+kernel-checked copies of this repository's banked witnesses, together with the
+parity obstruction and empty-class corollary behind Hadamard-M's erratum.

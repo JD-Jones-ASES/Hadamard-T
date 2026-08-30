@@ -48,8 +48,9 @@ Openness: Cati–Pasechnik Table 4 v2 (arXiv:2411.18897v2, 2025-08-30) lists
 `7172(1793,4)` and `8476(2119,4)` per this laboratory's machine-diffed
 transcription; re-check at release date. `m = 4` means neither `2²·n` nor
 `2³·n` carries an entry there, so the same two matrices also give **H(14344)**
-and **H(16952)** by Sylvester doubling, under the same label. A database
-records what its authors knew, not what exists.
+and **H(16952)** by Sylvester doubling, under the same label. Cert 04 re-derives
+the same unresolved set at `t = 163` — exactly `w ∈ {11, 13}` — from that
+transcription at run time.
 
 The Williamson quadruples of orders 1, 11 and 13 are classical, replay-grade
 objects and carry no novelty claim. The `w = 13` quadruple used here is the
@@ -85,4 +86,7 @@ makes `verify.py` exit 1.
 
 This certificate binds the existence of the order-163 quadruple and of the two
 matrices, and nothing more. It says nothing about other multiplier tiers at
-163, which were not searched, and it does not prove the two orders were open.
+163, which were not searched. On status: Table 4 v2 lists the entries
+`1793(4)` and `2119(4)` unresolved; this certificate proves the two matrices
+exist; we do not claim the table is a non-existence proof, and we do not need
+it to be.

@@ -43,9 +43,10 @@ structure; it did not find it.
 | `T103.json` | the order-103 T-matrix quadruple, as `classes[q]` and `signs[q]` with `T_i[q] = signs[q]` if `classes[q] = i` else `0` |
 | `T3-control.json` | the brute-forced order-3 control quadruple, same encoding, with the pinned H(60) digest |
 
-Decoded firsthand from `H2060.txt.gz` alone. No table, paper or third-party
+Decoded firsthand from `H2060.txt.gz` alone: no table, paper or third-party
 method disclosure was used, and no priority is claimed on the order-103
-object (see `certs/01-h2060-artifact/NOTES.md`).
+object (see `certs/01-h2060-artifact/NOTES.md`). What the decode yields is the
+quadruple that cert `02-t103-products` builds its six Hadamard orders from.
 
 ## Turyn-type payloads and the order-131 witnesses
 
@@ -100,11 +101,12 @@ already known. An odd `n ≤ 2999` **absent** from the file therefore has
 `m(n) = 2`. The file carries that convention in its own `provenance` block.
 
 Cert `04-t-bank` parses this file at run time to derive its openness sweep,
-and re-reads it at `t = 103` and `t = 163` as two controls that must reproduce
-the unresolved sets certs 02 and 03 spend. Certs 02, 03 and 05 check the
-entries they quote against it. Nothing here treats the table as a
-non-existence proof: it is a dated report of what its authors knew, and every
-certificate that reads it says so.
+and re-reads it at `t = 103` and `t = 163` as two controls that independently
+re-derive the unresolved sets certs 02 and 03 spend — `w ∈ {5, 7, 11, 17, 19,
+23, 29}` and `w ∈ {11, 13}`. Certs 02, 03 and 05 check the entries they quote
+against it. Nothing here treats the table as a non-existence proof: it is a
+dated report of what its authors knew, and the readings taken from it are
+recomputed from this file at run time rather than typed in.
 
 ## Williamson quadruples
 
@@ -153,6 +155,6 @@ its authors. License boundaries for this repository are in LICENSE-DOCS.md.
 
 At the public flip, the dated-table source was re-checked: arXiv:2411.18897
 remains at v2 (2025-08-30), the version every reading in this repository
-cites. The table-relative claims stand as written; the table records what its
-authors knew on its date, and later closures elsewhere would not be visible
-from here.
+cites. The table records what its authors knew on its date, and later closures
+elsewhere would not be visible from here; at that version and that date, the
+table-relative claims in this repository stand as written.

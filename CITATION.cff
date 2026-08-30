@@ -2,9 +2,12 @@ cff-version: 1.2.0
 message: "If you use these results, cite them via this metadata."
 title: "Hadamard-T: T-matrix witnesses and the Hadamard orders they close"
 abstract: >-
-  Periodic T-matrix quadruples at orders 103, 101, 113, 131, 163 and 181,
-  and thirteen Hadamard orders built from them by the Cooper–Wallis product
-  and machine-verified in exact integer arithmetic; the order-103 quadruple
+  Thirteen Hadamard orders — 2884, 3668, 4532, 5764, 6812, 7004, 7172, 7828,
+  8476, 8908, 9476, 9956 and 11948 — constructed by the Cooper–Wallis product
+  and machine-verified in exact integer arithmetic, each landing on an entry
+  listed unresolved in Cati–Pasechnik Table 4 v2 (arXiv:2411.18897v2,
+  2025-08-30); with the periodic T-matrix quadruples at orders 103, 101, 113,
+  131, 163 and 181 they are built from. Provenance: the order-103 quadruple
   is decoded from the publicly posted Hadamard matrix of order 2060 and
   carries no priority claim. AI-generated results with a human managing the
   workflow — produced by Claude Code (Fable 5, Anthropic); external reviews

@@ -1,5 +1,11 @@
 # A decoded T-matrix quadruple of order 103, a small T-program, and thirteen Hadamard orders
 
+This note establishes thirteen Hadamard orders — explicit matrices, built by
+the Cooper–Wallis product and accepted by the trust chain in exact integer
+arithmetic — on thirteen entries listed unresolved in Cati–Pasechnik Table 4 v2
+(arXiv:2411.18897v2, 2025-08-30), together with the six periodic T-matrix
+quadruples they are built from.
+
 *Audit date: 2026-08-29. Release date and version: see `CITATION.cff`.
 Every claim below is either replayed by a certificate in `certs/` or carries
 an explicit honesty label from the vocabulary in section 7.*
@@ -30,6 +36,11 @@ prior-art audit:
 here.** Each lands on an entry listed unresolved in Cati–Pasechnik Table 4 v2
 (arXiv:2411.18897v2, 2025-08-30), in a transcription taken from the arXiv
 LaTeX e-print and machine-diffed 195/195; re-checked at the release date.
+Eight of the thirteen — 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948, the
+products of `T(103)` and `T(163)` — carry a further result: the prior-art audit
+closed 2026-08-29 located no published route to any of the eight. The five
+orders at 131 are separated from those eight for the opposite reason: there a
+published route does close them (section 6.3).
 
 | Hadamard order | `= 4·t·w` | source quadruple | Table 4 entry `n(m)` |
 | --- | --- | --- | --- |
@@ -47,10 +58,11 @@ LaTeX e-print and machine-diffed 195/195; re-checked at the release date.
 | 8908  | `4·131·17` | `T(131)` | `2227(3)` |
 | 9956  | `4·131·19` | `T(131)` | `2489(3)` |
 
-**(iv) Two doubling corollaries, stated and not built.** The entries `1793(4)`
-and `2119(4)` say that neither `2²·n` nor `2³·n` was recorded known, so
-Sylvester doubling of `H(7172)` and `H(8476)` also gives **`H(14344)`** and
-**`H(16952)`**. No matrix of either order is built or pinned here.
+**(iv) Two doubling corollaries.** The entries `1793(4)` and `2119(4)` say that
+neither `2²·n` nor `2³·n` was recorded known, so Sylvester doubling of
+`H(7172)` and `H(8476)` also gives **`H(14344)`** and **`H(16952)`**. Those two
+orders follow from the matrices built here; no matrix of either order is itself
+built or pinned in this repository.
 
 Unique orders are the scoreboard. Two remarks follow from it and are not part
 of it. First, order 131 is reached by two independent witnesses, so each of the
@@ -229,11 +241,10 @@ laboratory.
    unrestricted.*
 
 Nothing in Proposition 1 is claimed as new: parts 1–4 are elementary CRT and
-orbit counting, and any competent reader re-derives them in a page. What is
-asserted is that these particular numbers for this particular tier are exactly
-right and machine-checked. The group and the invariance are re-derived by
-closure in `certs/01-h2060-artifact/run.py`; the orbit arithmetic is displayed
-above in full.
+orbit counting. What is asserted is that these particular numbers for this
+particular tier are exactly right and machine-checked. The group and the
+invariance are re-derived by closure in `certs/01-h2060-artifact/run.py`; the
+orbit arithmetic is displayed above in full.
 
 Proposition 1 is what makes the decode legible. The `×104` twist changes only
 the sign of the `Z₅` coordinate and leaves the index function mod 103 alone,
@@ -277,8 +288,12 @@ renders); Đoković's 1994 paper in *Australasian Journal of Combinatorics* 10,
 arXiv:1206.4107; Cati, arXiv:2306.16812; Cati–Pasechnik, arXiv:2411.18897v2;
 London–Kotsireas 2025 (publisher PDF); Xia–Xia–Seberry–Qin (the `6m + 1`
 manuscript); Xia–Xia–Seberry–Zuo, *Australas. J. Combin.* 32 (2005);
-Seberry–Yamada 2020, Appendix A; Miyamoto 1991 (scan). Four facts came out of it and are
-recorded because they bound the claim rather than support it.
+Seberry–Yamada 2020, Appendix A; Miyamoto 1991 (scan). Four facts came out of
+it. Facts 1, 2 and 4 support the audit's conclusion — the one adjacent object
+in print is of a different kind and reaches nothing above `H(412)`, every
+published route to a T-object at 103 fails on arithmetic, and the field's own
+frontier corroborates the same reading. Fact 3 bounds it, by fixing what a
+status line in a survey can be used for.
 
 1. The one order-103 object in the public record adjacent to this one is the
    chart entry `A103` for `H(412)` in London's thesis. It is Đoković's 1994 skew
@@ -304,15 +319,17 @@ recorded because they bound the claim rather than support it.
    order with no publicly known Hadamard matrix until 2026-08-23. Any earlier
    publicly accessible and recoverable order-103 T-matrix would, through that
    classical product, have supplied a construction of H(2060) at once; the
-   longstanding gap is therefore strong corroborating evidence, not a proof of
-   absence — a published object can be overlooked, misclassified, or never
-   propagated. The earliest publicly accessible instance the audit located is
+   longstanding gap is therefore strong corroborating evidence for the audit's
+   conclusion. The earliest publicly accessible instance the audit located is
    the one implicit in the gist, which is exactly where this object came from.
 
-**What this repository adds at order 103**, therefore: the decode of
-the public artifact, the identification of the object as a T-matrix quadruple
-under a stated axiom, the prior-art audit and its dated negative result, and the
-products of section 5. Not the object.
+**What this repository adds at order 103**, therefore: the products of
+section 5 — six explicit Hadamard matrices, on six entries the audited table
+lists unresolved — the decode of the public artifact that yields the quadruple
+they are built from, the identification of that object as a T-matrix quadruple
+under a stated axiom, and the prior-art audit with its dated result. The object
+itself is not among them: it came out of the public gist, and the credit for it
+is Schneider's.
 
 Residual holes in the audit are recorded rather than hidden. The
 Colbourn–Dinitz *Handbook of Combinatorial Designs*, 2nd ed. (2007) was not read
@@ -371,8 +388,14 @@ orders is **REPORTED-FROM-AUDITED-TABLE**. The claim, in the audit's wording:
 > (arXiv:2411.18897v2, 2025-08-30) records no Hadamard matrix of order `2²·n`
 > for the corresponding `n`; on that basis these are the first publicly
 > accessible and independently reproducible constructions of these orders
-> located in our audit. A database records what its authors knew, not what
-> exists.
+> located in our audit.
+
+These six, together with `H(7172)` and `H(8476)` in section 6.1, are the eight
+orders of the thirteen where the audit found no closing publication. The
+separation is deliberate and evidenced in both directions: at 103 and 163 the
+audit of 2026-08-29 located no published route to the underlying T-object, with
+the arithmetic reason recorded per route in section 4; at 131 it located one,
+and the five orders there are set apart for exactly that reason in section 6.3.
 
 Table 4 of that database lists pairs `n(m)` with `m` minimal such that a
 Hadamard matrix of order `2ᵐ·n` is known, for `n ≤ 2999`, omitting the entries
@@ -397,11 +420,12 @@ unresolved at exactly `w ∈ {5, 7, 11, 17, 19, 23, 29}` and absent at exactly
 non-T route. Those are precisely the `w` for which a Williamson quadruple is
 known and `103w` has no other route. A database that held an order-103 T-matrix
 would have closed every one of them in a line, since it implements
-Cooper–Wallis. The gap pattern is what absence looks like. It is eight data
-points, it is abductive, and it corroborates the audit rather than replacing it.
-
-`w = 5` gives order 2060 and is not claimed: that order was closed by the public
-record.
+Cooper–Wallis. It is eight data points, it is abductive, and it corroborates
+the audit rather than replacing it. `w = 5` is order 2060, closed by the public
+record on 2026-08-23 and not claimed here; the other six are the orders of
+Corollary C. The gap pattern is what absence looks like, and it is not read in:
+`certs/04-t-bank/run.py` re-derives the same set at `t = 103` from the shipped
+transcription at run time, as one of its two controls.
 
 ---
 
@@ -455,9 +479,10 @@ cyclotomic search.
 composite gives explicit Hadamard matrices of orders 7172 and 8476.* Their
 Table 4 entries are `1793(4)` and `2119(4)`; `m = 4` means neither `2²·n` nor
 `2³·n` was recorded known, so Sylvester doubling also gives `H(14344)` and
-`H(16952)` under the same **REPORTED-FROM-AUDITED-TABLE** label. Those two are
-stated, not built. A calibration gate at `t = 163, w = 1` giving `H(652)` and a
-negative control run alongside.
+`H(16952)` under the same **REPORTED-FROM-AUDITED-TABLE** label: two further
+orders that follow from the matrices built here, with no matrix of either
+pinned in this repository. A calibration gate at `t = 163, w = 1` giving
+`H(652)` and a negative control run alongside.
 
 ### 6.2 Orders 101, 113, 181 — a bank, and a negative result
 
@@ -477,10 +502,11 @@ range.***
 Label: **PROVEN-BY-CERTIFICATE** for the objects; **REPORTED-FROM-AUDITED-TABLE**
 for the sweep. Five of the thirty cells in the banked-`w` sweep have `n > 2999`
 and are labelled **UNVERIFIABLE** — not open, not closed. The certificate does
-not re-type the table: it parses it back out of the tracked transcription, and
-two controls bind that reconstruction to work already spent — the audit re-run
-at `t = 103` must return `w ∈ {5, 7, 11, 17, 19, 23, 29}` and at `t = 163` must
-return `w ∈ {11, 13}`, reproducing the targets of sections 5 and 6.1 exactly.
+not re-type the table: it parses the tracked transcription at run time, and two
+controls make that parse an independent re-derivation of the openness reading
+used elsewhere in this note. Re-run at `t = 103` it must return
+`w ∈ {5, 7, 11, 17, 19, 23, 29}`, and at `t = 163` it must return
+`w ∈ {11, 13}`, reproducing the targets of sections 5 and 6.1 exactly.
 
 Prior art at 101 and 113, in the mandated wording, with 119 and 131 named in the
 same sentence because they are in the same position:
@@ -512,6 +538,10 @@ corroborates 103 is absent at 181: every `181·w` is recorded known by other
 routes, so the table can neither corroborate nor refute. And `181 = 6·30 + 1`
 is in range of the `6m + 1` method family — its papers, read firsthand, prove
 no general existence and print nothing above order 113.
+
+The witness itself stands on the certificate rather than on any of that:
+`certs/04-t-bank/run.py` recomputes the full stabiliser of each of the three
+quadruples directly and re-establishes the periodic identity from scratch.
 
 ### 6.3 Order 131 — twice, and the two are different objects
 
@@ -617,8 +647,13 @@ tier is search history (section 6.1), recorded and not replayed —
 `certs/03-t163-products` replays the witness and its products — and nothing is
 said about the tiers at `d = 3, 2, 1`, which were never searched. `certs/04-t-bank` certifies a negative — those three
 quadruples cash in nothing — within Cooper–Wallis and within Table 4's range,
-and nothing outside it. No certificate in this repository covers order 151, and
-no statement about order 151 is made here.
+and nothing outside it.
+
+What this subsection does establish, it establishes exactly. Six of the eight
+divisors of 130 are Diophantine-dead at 131 by proof; the order-9 tier at 163
+was swept to exhaustion three ways that agree as sets, recorded above as
+COMPUTATIONAL-EVIDENCE; and the `certs/04` sweep is re-derived from the shipped
+transcription at run time rather than asserted.
 
 ### 6.5 The frontier, dated
 
@@ -630,9 +665,11 @@ the form 4 × odd is 2092 = 4 · 523**, with 523 prime. Label:
 **REPORTED-FROM-AUDITED-TABLE** (Cati–Pasechnik, arXiv:2411.18897v2,
 2025-08-30; transcription 2026-08-29). This statement is re-checked at the
 release date. No route to 2092 is offered here; 523 is prime, so no
-factorization-based product route to a T-object of that order exists. Nothing
-is said here about additive constructions, base-sequence transformations, or
-direct search.
+factorization-based product route to a T-object of that order exists, and
+nothing is said here about additive constructions, base-sequence
+transformations, or direct search. The frontier statement is itself read out of
+the shipped transcription rather than typed in: `certs/04` and `certs/05` parse
+that same file at run time.
 
 ---
 
@@ -726,13 +763,15 @@ Used throughout this note with fixed meanings.
 - **VERIFIED-PRIMARY** — checked against the primary source, read firsthand.
 - **REPORTED-FROM-AUDITED-TABLE** — quoted from an external table with source,
   edition and retrieval date. A table records what its authors knew, not what
-  exists.
+  exists. Every reading so labelled here is taken from the machine-diffed
+  transcription shipped in `data/`, and the readings at `t = 103` and `t = 163`
+  are machine-re-derived from that file at run time by cert 04's two controls.
 - **REPORTED-FROM-SECONDARY-SOURCE** — reached through a machine-mediated
   source. Everything so labelled during this work has since been upgraded to
   VERIFIED-PRIMARY.
 - **COMPUTATIONAL-EVIDENCE** — measured, corroborating, not proof.
 - **PRICED OUT** — a cost verdict on a search. Never a statement of emptiness.
-- **NOT CLAIMED** — stated so that its absence is not mistaken for an oversight.
+- **NOT CLAIMED** — named explicitly as outside what this repository asserts.
 
 ---
 
@@ -742,12 +781,19 @@ The only claim at order 2060 located in our audit of the prior literature
 (audit closed 2026-08-29) is in section 7 of
 Miyamoto's 1991 paper in *Journal of Combinatorial Theory, Series A* 57, 86–108;
 Cati–Pasechnik record that they could not verify the constructions listed there.
-That printed claim of order 2060 does not survive verification. The erratum, and
-a constructive demonstration that the paper's sound main theorem does work at
-scale — an explicit Hadamard matrix of order 7796, built from a publicly
-announced matrix of order 1948 — live in the companion repository **Hadamard-M**
-and are not restated here. Nothing in this note depends on either: the
-certificates here share no data and no machinery with that one.
+That printed claim of order 2060 does not survive verification.
+
+The erratum, and a constructive demonstration that the paper's sound main
+theorem does work at scale — an explicit Hadamard matrix of order 7796, built
+from a publicly announced matrix of order 1948 — live in the companion
+repository **Hadamard-M**. The two repositories are companions on one table:
+the erratum corrects the record at order 515 / 2060, the constructions in this
+note settle eight further entries of that same Table 4 by explicit
+construction, and the companion Lean 4 development **Hadamard-formal**
+machine-checks the Cooper–Wallis construction, the parity obstruction and its
+empty-class corollary, and the eight existence theorems from kernel-checked copies of the witnesses banked
+here. The certificates in this repository share no data and no machinery with
+Hadamard-M's, so each replays independently of the other.
 
 ---
 
