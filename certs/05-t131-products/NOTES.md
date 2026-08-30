@@ -40,9 +40,13 @@ eight divisors of 130, six admit no row-sum profile even solving `Σ rᵢ² = 13
 so only `d ∈ {1, 5}` survive, and `d = 5` carries exactly one admissible
 profile up to the per-class sign flip, `|r| = (0, 5, 5, 9)`.
 
-**The two are different objects** — support multisets, row-sum multisets,
-multiplier-group orders and aggregate non-periodic autocorrelation all
-separate them, and `run.py` asserts each separation. The ten matrices come in
+**The two are inequivalent** — the support multisets `(44, 43, 23, 21)` and
+`(11, 10, 55, 55)` differ, and the support multiset is preserved by every
+equivalence move on T-matrix quadruples (reorder, negate, shift, decimate);
+`run.py` asserts that separation. The row-sum, strict-multiplier-group and
+aggregate-NPAF differences are recorded as descriptions of the banked
+representatives, not used as invariants — the strict stabiliser and the NPAF
+are not preserved under cyclic shift. The ten matrices come in
 five pairs with distinct canonical digests.
 
 | order | `w` | witness 1 canonical SHA-256 | witness 2 canonical SHA-256 |

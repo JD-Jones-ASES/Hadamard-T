@@ -25,9 +25,11 @@ not aperiodic T-sequences.
 The Cati–Pasechnik Table 4 transcription is published in this repository as
 `data/cp-table4-v2.json` (195 entries, odd `n ≤ 2999`, the reading convention
 in its own provenance block), and `run.py` **parses it at run time**. For every
-`t ∈ {101, 113, 181}` and every odd `w ≤ 63`, the odd part `n = t·w` carries no
-entry there, so `H(4tw)` was already known: **zero reachable unresolved
-orders**. Five of the thirty banked cells — `4·113·29`, `4·181·17`, `4·181·19`,
+`t ∈ {101, 113, 181}` and every odd `w ≤ 63` with `t·w` inside the table's
+range (`n ≤ 2999`) — 36 of the 96 nominal cells — the odd part `n = t·w`
+carries no entry there, so `H(4tw)` was already known: **zero reachable
+unresolved orders within the table's range**. The 60 cells beyond the range
+are UNVERIFIABLE, not established. Five of the thirty banked cells — `4·113·29`, `4·181·17`, `4·181·19`,
 `4·181·23`, `4·181·29` — have `n > 2999`, past the end of the table, and are
 printed **UNVERIFIABLE**: not open, not closed. The sweep is run over every odd
 `w ≤ 63`, not only the ten `w` this repository banks, so the empty result is

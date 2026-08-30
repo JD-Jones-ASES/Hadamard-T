@@ -140,3 +140,11 @@ digests of the products depend on which one is used.
 | `williamson-13.json` | 770 | `249ba0919c5f0b82faab5d6c248a1a2ab18107d5a6ee2175195236fc3509935f` |
 | `williamson-9-13.json` | 876 | `4621ea45635f7895beabbe01a692e76989f22b1abf5cb7b2141c784685e07810` |
 | `williamson-quadruples.json` | 2390 | `515dac963269e31694445c5ad7635b001e16b3ea3cdb58fa8ee12eaae47e0446` |
+
+## Redistribution
+
+`H2060.txt.gz` is a redistributed copy of a publicly posted matrix, kept
+byte-identical to the source payload and pinned by the digests above; the
+matrix is mathematical data and no license is claimed over it here. The
+Table 4 transcription is a transcription of a published table, credited to
+its authors. License boundaries for this repository are in LICENSE-DOCS.md.

@@ -426,16 +426,22 @@ def main():
           "positive lags. It is a T-MATRIX quadruple,\n           exactly "
           "Cooper-Wallis's hypothesis, and not an aperiodic T-sequence,\n"
           "           unlike [C]'s." % (nz, T - 1))
-    check("THE TWO WITNESSES ARE DIFFERENT OBJECTS: support multisets %s vs "
-          "%s, row-sum multisets %s vs %s, multiplier groups of order %d vs "
-          "%d, aggregate NPAF %s vs nonzero off-peak -- no equivalence can "
-          "identify them"
-          % (sorted(EXPECT_SUPPORTS), sorted(suppm), sorted(EXPECT_ROWSUMS),
-             sorted(rsm), len(K), len(Km), "131*delta_0"),
-          sorted(EXPECT_SUPPORTS) != sorted(suppm)
-          and sorted(EXPECT_ROWSUMS) != sorted(rsm)
-          and len(K) != len(Km)
-          and not any(an[1:]) and any(nm[1:]))
+    check("THE TWO WITNESSES ARE INEQUIVALENT, by the one invariant that "
+          "carries the proof: support multisets %s vs %s differ, and the "
+          "support multiset is preserved by every equivalence move on "
+          "T-matrix quadruples (reorder, negate, shift, decimate)"
+          % (sorted(EXPECT_SUPPORTS), sorted(suppm)),
+          sorted(EXPECT_SUPPORTS) != sorted(suppm))
+    print("      [--] recorded, NOT invariants: the two banked "
+          "representatives also differ in row-sum multisets "
+          "(%s vs %s), strict multiplier-group orders (%d vs %d), and "
+          "aggregate NPAF (131*delta_0 vs nonzero off-peak)."
+          % (sorted(EXPECT_ROWSUMS), sorted(rsm), len(K), len(Km)))
+    print("           These are descriptions of the banked representatives; "
+          "the strict stabiliser and")
+    print("           the NPAF are not preserved under cyclic shift, so the "
+          "inequivalence rests on the")
+    print("           support multiset alone.")
 
     # ------------------------------------------------------------------ [D]
     print("\n[D] the Williamson quadruples the cash-in assumes")

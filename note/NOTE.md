@@ -468,8 +468,11 @@ banked in `data/` and re-verified in `certs/04-t-bank/run.py`, with supports
 stabilisers of orders 5, 7, 9 respectively — in each case exactly the design
 tier, with no accidental enlargement, the stabiliser being computed directly
 rather than read in. For every one of the three and every Williamson order
-`w ≤ 63` — the range in which Williamson type is known throughout — the odd part
-`t·w` is absent from Table 4. **Zero unresolved orders are reachable.***
+`w ≤ 63` with `t·w` inside the table's range (`n ≤ 2999`) — 36 of the 96
+nominal cells — the odd part `t·w` is absent from Table 4, that is, recorded
+known; the 60 cells beyond the table's range are UNVERIFIABLE, not
+established. **Zero unresolved orders are reachable within the table's
+range.***
 
 Label: **PROVEN-BY-CERTIFICATE** for the objects; **REPORTED-FROM-AUDITED-TABLE**
 for the sweep. Five of the thirty cells in the banked-`w` sweep have `n > 2999`
@@ -554,23 +557,37 @@ of standard-library Python. The five orders are recorded because they had not
 been written down, and the credit for the object that unlocks them belongs to
 London and Kotsireas.
 
-**Theorem F (a second, independent witness).** *A pre-registered search over the
-unique order-5 subgroup of `Z₁₃₁*` — 27 orbits, 81 cells, 13 reduced equations,
-with the admissible row-sum profile computed to be unique up to per-class sign
-flip before any search ran — produces T-matrix quadruples of order 131 with
-support profile `(11, 10, 55, 55)`, row sums `(−9, 0, 5, 5)`, and multiplier
-group of order exactly 5. Sixteen matches over four canonical masks, eight
-distinct unordered quadruples, zero recheck failures. One of them is the witness
-this repository cashes in.*
+**Theorem F (a second, independent witness).** *There is a T-matrix quadruple
+of order 131 with support profile `(11, 10, 55, 55)`, row sums `(−9, 0, 5, 5)`,
+and strict multiplier group of order 5 — the witness this repository banks and
+replays.* Label: **PROVEN-BY-CERTIFICATE**, in `certs/05-t131-products/run.py`.
+
+The witness came from a pre-registered search over the unique order-5 subgroup
+of `Z₁₃₁*` — 27 orbits, 81 cells, 13 reduced equations, with the admissible
+row-sum profile computed to be unique up to per-class sign flip before any
+search ran. The search record — sixteen matches over four canonical masks,
+eight distinct unordered quadruples, zero recheck failures, spanning support
+profiles `(11, 10, 55, 55)` (twelve of the sixteen) and
+`(11, 10, 45, 65)` / `(11, 10, 65, 45)` (the other four) — is
+COMPUTATIONAL-EVIDENCE, banked in `data/T131-multiplier-tier.json` and not
+replayed by the certificate, which checks the selected witness alone.
 
 **Proposition 3 (inequivalence, by invariant separation).** *The two witnesses
 are not equivalent. Their support multisets are `(44, 43, 23, 21)` and
-`(11, 10, 55, 55)`; their multiplier group orders are 1 and 5; their row sums
-differ; the first has aggregate non-periodic autocorrelation `131·δ₀` and the
-second is nonzero off-peak. Support multiset and multiplier-group order are
-preserved by the equivalence moves on T-matrix quadruples — reordering,
-negation, shift and decimation — so the separation of these invariants is a
-certified inequivalence, obtained without an orbit search.*
+`(11, 10, 55, 55)`, and the support multiset is preserved by every equivalence
+move on T-matrix quadruples — reordering, negation, shift and decimation each
+permute or translate the four supports without changing their sizes. The
+separation of this one invariant is a certified inequivalence, obtained
+without an orbit search.*
+
+The two representatives banked here also differ in row sums, in strict
+multiplier-group order (1 against 5), and in aggregate non-periodic
+autocorrelation (`131·δ₀` against nonzero off-peak). Those are recorded as
+descriptions of the banked representatives, not used as invariants: the strict
+stabiliser and the non-periodic autocorrelation are not preserved under cyclic
+shift — shifting the second witness by one position keeps it an equivalent
+T-matrix quadruple and collapses its strict stabiliser to the identity — so
+nothing in the inequivalence argument rests on them.
 
 Label: **PROVEN-BY-CERTIFICATE**, computed in `certs/05-t131-products/run.py`.
 Because the two are different objects, each of the five orders is built twice,
@@ -595,9 +612,10 @@ untouched. Six of the eight divisors of 130 were shown Diophantine-dead before
 the search — no profile even solves `Σ rᵢ² = 131` — which is a proof, and the
 remaining cost is a price.
 
-The same discipline applies elsewhere. `certs/03-t163-products` certifies
-exhaustion of one tier at 163 and says nothing about the tiers at `d = 3, 2, 1`,
-which were never searched. `certs/04-t-bank` certifies a negative — those three
+The same discipline applies elsewhere. At 163 the exhaustion of the order-9
+tier is search history (section 6.1), recorded and not replayed —
+`certs/03-t163-products` replays the witness and its products — and nothing is
+said about the tiers at `d = 3, 2, 1`, which were never searched. `certs/04-t-bank` certifies a negative — those three
 quadruples cash in nothing — within Cooper–Wallis and within Table 4's range,
 and nothing outside it. No certificate in this repository covers order 151, and
 no statement about order 151 is made here.
@@ -720,7 +738,8 @@ Used throughout this note with fixed meanings.
 
 ## 8. The prior claim at order 2060
 
-The only claim in the prior literature at order 2060 is in section 7 of
+The only claim at order 2060 located in our audit of the prior literature
+(audit closed 2026-08-29) is in section 7 of
 Miyamoto's 1991 paper in *Journal of Combinatorial Theory, Series A* 57, 86–108;
 Cati–Pasechnik record that they could not verify the constructions listed there.
 That printed claim of order 2060 does not survive verification. The erratum, and

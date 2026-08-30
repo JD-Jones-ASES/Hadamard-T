@@ -6,7 +6,8 @@ a periodic T-matrix quadruple of order 103; five further T-matrix quadruples, at
 orders 101, 113, 163, 181, and 131 (the last obtained twice, by two independent
 routes); and thirteen Hadamard orders built from those quadruples by the
 Cooper–Wallis product, each accepted by the trust chain in exact integer
-arithmetic. Every claim replays from `certs/`.
+arithmetic. Every constructed matrix and every banked object replays from
+`certs/`; search history is recorded and labelled in the note, not replayed.
 
 ## Definitions
 
@@ -110,8 +111,11 @@ are London and Kotsireas 2025; prior T-sequences at these lengths are due to
 Hall; Goethals and Seidel; Turyn; Cooper and Wallis. The audited status table
 is Cati and Pasechnik, arXiv:2411.18897v2 (2025-08-30).
 
-Code is MIT; see [LICENSE](LICENSE). The note and the data documentation are
-CC BY-SA 4.0. Authorship is in [DISCLOSURE.md](DISCLOSURE.md).
+Code is MIT; see [LICENSE](LICENSE). The note (`note/`) and the prose
+documentation in `data/` are CC BY-SA 4.0; see [LICENSE-DOCS](LICENSE-DOCS.md)
+for the exact boundary. The banked matrices and sequences are mathematical
+data: no license is claimed over them, and the redistributed public artifact
+keeps its provenance pins. Authorship is in [DISCLOSURE.md](DISCLOSURE.md).
 
 Companion repository: [Hadamard-M](https://github.com/JD-Jones-ASES/Hadamard-M),
 the erratum on Miyamoto's 1991 construction at order 515 and an explicit

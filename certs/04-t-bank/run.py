@@ -252,10 +252,16 @@ def main():
     # Sweep EVERY odd w <= 63 -- the range in which Williamson-type quadruples
     # are known for all w -- regardless of what is banked here.
     wide = [(t, w, t * w, table[t * w]) for t in TS for w in asm.cp_open_w(table, t)]
-    check("no odd w <= 63 AT ALL puts t*w on a Table 4 entry, for any of "
-          "t = %s -- so the empty result is not an artefact of this "
-          "repository's Williamson bank (hits: %s)" % (list(TS), wide),
-          not wide)
+    in_range = [(t, w) for t in TS for w in range(1, 64, 2)
+                if t * w <= asm.CP_N_MAX]
+    beyond = [(t, w) for t in TS for w in range(1, 64, 2)
+              if t * w > asm.CP_N_MAX]
+    check("no odd w <= 63 with t*w INSIDE the table's range (n <= %d) puts "
+          "t*w on a Table 4 entry, for any of t = %s -- %d in-range cells "
+          "tested, %d cells lie beyond the table and are UNVERIFIABLE here, "
+          "not established (hits: %s)"
+          % (asm.CP_N_MAX, list(TS), len(in_range), len(beyond), wide),
+          not wide and len(in_range) + len(beyond) == len(TS) * 32)
     print("    Label: REPORTED-FROM-AUDITED-TABLE. The sweep is re-derived "
           "here from the\n    transcription in data/, but a table records what "
           "its authors knew on its\n    date; this is a reading of that table, "
