@@ -119,4 +119,8 @@ keeps its provenance pins. Authorship is in [DISCLOSURE.md](DISCLOSURE.md).
 
 Companion repository: [Hadamard-M](https://github.com/JD-Jones-ASES/Hadamard-M),
 the erratum on Miyamoto's 1991 construction at order 515 and an explicit
-Hadamard matrix of order 7796.
+Hadamard matrix of order 7796. Formalization:
+[Hadamard-formal](https://github.com/JD-Jones-ASES/Hadamard-formal) — a Lean 4
+/ Mathlib development proving the Cooper–Wallis construction and the existence
+theorems at orders 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948 from
+kernel-checked copies of this repository's banked witnesses.
