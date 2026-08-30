@@ -166,4 +166,5 @@ Hadamard matrix of order 7796. Formalization:
 / Mathlib development proving the Cooper–Wallis construction and the existence
 theorems at orders 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948 from
 kernel-checked copies of this repository's banked witnesses, together with the
-parity obstruction and empty-class corollary behind Hadamard-M's erratum.
+parity obstruction, its empty-class corollary, and the C₂-display
+nonexistence theorem behind Hadamard-M's erratum.

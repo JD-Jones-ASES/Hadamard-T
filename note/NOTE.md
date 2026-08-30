@@ -794,8 +794,9 @@ repository **Hadamard-M**. The two repositories are companions on one table:
 the erratum corrects the record at order 515 / 2060, the constructions in this
 note settle eight further entries of that same Table 4 by explicit
 construction, and the companion Lean 4 development **Hadamard-formal**
-machine-checks the Cooper–Wallis construction, the parity obstruction and its
-empty-class corollary, and the eight existence theorems from kernel-checked copies of the witnesses banked
+machine-checks the Cooper–Wallis construction, the parity obstruction with
+its empty-class corollary and C₂-display application, and the eight existence
+theorems from kernel-checked copies of the witnesses banked
 here. The certificates in this repository share no data and no machinery with
 Hadamard-M's, so each replays independently of the other.
 
