@@ -797,7 +797,8 @@ construction, and the companion Lean 4 development **Hadamard-formal**
 machine-checks the Cooper–Wallis construction, the parity obstruction with
 its empty-class corollary and C₂-display application, and the eight existence
 theorems from kernel-checked copies of the witnesses banked
-here. The certificates in this repository share no data and no machinery with
+here, and is registered in the Palomar Registry as
+PALOMAR-2026-08-31-000001. The certificates in this repository share no data and no machinery with
 Hadamard-M's, so each replays independently of the other.
 
 ---

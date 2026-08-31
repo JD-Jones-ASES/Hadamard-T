@@ -167,4 +167,5 @@ Hadamard matrix of order 7796. Formalization:
 theorems at orders 2884, 4532, 7004, 7172, 7828, 8476, 9476 and 11948 from
 kernel-checked copies of this repository's banked witnesses, together with the
 parity obstruction, its empty-class corollary, and the C₂-display
-nonexistence theorem behind Hadamard-M's erratum.
+nonexistence theorem behind Hadamard-M's erratum. That development is
+registered in the Palomar Registry as PALOMAR-2026-08-31-000001.
